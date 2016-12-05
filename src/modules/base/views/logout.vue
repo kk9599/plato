@@ -1,5 +1,5 @@
 <template>
-  <div class="v-logout">
+  <div class="logout">
     <c-image
       src="images/logo.png"></c-image>
     <c-modal
@@ -58,4 +58,4 @@ export default {
 }
 </script>
 
-<style src="../styles/logout"></style>
+<style src="../styles/logout" scoped></style>

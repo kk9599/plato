@@ -1,0 +1,23 @@
+.source {
+  padding: dpr(20px);
+  background-color: color(var(--placeholder) lightness(+15%));
+  position: relative;
+  overflow: scroll;
+
+  &:after {
+    content: '<source>';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 80%;
+    background-color: white;
+    padding: 0 dpr(20px);
+    border-bottom-right-radius: dpr(20px);
+  }
+
+  & code {
+    display: block;
+    padding-top: dpr(20px);
+    white-space: pre;
+  }
+}

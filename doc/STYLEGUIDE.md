@@ -8,6 +8,7 @@
 1. [数据初始化](#user-content-数据初始化)
 1. [Watch 的范围应尽量小](#user-content-watch-的范围应尽量小)
 1. [使用 .vue 文件编写组件](#user-content-使用-vue-文件编写组件)
+1. [适度使用 scoped style](#user-content-适度使用-scoped-style)
 1. [自定义元素的标签名应包含连字符](#user-content-自定义元素的标签名应包含连字符)
 1. [合理使用内置元素的内置属性](#user-content-合理使用内置元素的内置属性)
 1. [可复用组件应定义清晰的公开接口](#user-content-可复用组件应定义清晰的公开接口)
@@ -125,6 +126,11 @@ export default {
 
   - 除必要的 v-for/v-if 外，数据逻辑应尽量写在 script 里，保持 template 逻辑简单
   - 组件样式文件应使用外链，方便自定义皮肤
+
+## 适度使用 scoped style
+
+  - 在模块中使用，让 css 只在当前模块中起作用
+  - **不要**在通用组件中使用，对通用组件采用命名规则进行约束
 
 ## 自定义元素的标签名应包含连字符
 

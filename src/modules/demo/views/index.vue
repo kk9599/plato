@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <div class="v-demo" v-if="!$route.params.component">
+  <div class="index">
+    <div class="entries" v-if="!$route.params.component">
       <h3>Core</h3>
       <div class="v-demo-section">
         <c-row :link="true">
           <c-col>
-            <router-link to="demo/icon">
-              <c-icon>flame</c-icon> Icon</router-link>
+            <router-link to="demo/avatar">
+              <c-icon>flame</c-icon> Avatar</router-link>
           </c-col>
         </c-row>
         <c-row :link="true">
@@ -17,20 +17,8 @@
         </c-row>
         <c-row :link="true">
           <c-col>
-            <router-link to="demo/progress">
-              <c-icon>flame</c-icon> Progress</router-link>
-          </c-col>
-        </c-row>
-        <c-row :link="true">
-          <c-col>
             <router-link to="demo/button">
               <c-icon>flame</c-icon> Button</router-link>
-          </c-col>
-        </c-row>
-        <c-row :link="true">
-          <c-col>
-            <router-link to="demo/link">
-              <c-icon class="c-reddot">flame</c-icon> Link</router-link>
           </c-col>
         </c-row>
         <c-row :link="true">
@@ -41,26 +29,8 @@
         </c-row>
         <c-row :link="true">
           <c-col>
-            <router-link to="demo/row">
-              <c-icon>flame</c-icon> Row</router-link>
-          </c-col>
-        </c-row>
-        <c-row :link="true">
-          <c-col>
-            <router-link to="demo/spinner">
-              <c-icon>flame</c-icon> Spinner</router-link>
-          </c-col>
-        </c-row>
-        <c-row :link="true">
-          <c-col>
-            <router-link to="demo/modal">
-              <c-icon>flame</c-icon> Modal</router-link>
-          </c-col>
-        </c-row>
-        <c-row :link="true">
-          <c-col>
-            <router-link to="demo/toast">
-              <c-icon>flame</c-icon> Toast</router-link>
+            <router-link to="demo/icon">
+              <c-icon>flame</c-icon> Icon</router-link>
           </c-col>
         </c-row>
         <c-row :link="true">
@@ -71,14 +41,14 @@
         </c-row>
         <c-row :link="true">
           <c-col>
-            <router-link to="demo/avatar">
-              <c-icon class="c-reddot">flame</c-icon> Avatar</router-link>
+            <router-link to="demo/link">
+              <c-icon>flame</c-icon> Link</router-link>
           </c-col>
         </c-row>
         <c-row :link="true">
           <c-col>
-            <router-link to="demo/scroller">
-              <c-icon>flame</c-icon> Scroller: pulling and infinite scroll</router-link>
+            <router-link to="demo/modal">
+              <c-icon>flame</c-icon> Modal</router-link>
           </c-col>
         </c-row>
         <c-row :link="true">
@@ -89,8 +59,26 @@
         </c-row>
         <c-row :link="true">
           <c-col>
+            <router-link to="demo/progress">
+              <c-icon>flame</c-icon> Progress</router-link>
+          </c-col>
+        </c-row>
+        <c-row :link="true">
+          <c-col>
             <router-link to="demo/range">
               <c-icon>flame</c-icon> Range</router-link>
+          </c-col>
+        </c-row>
+        <c-row :link="true">
+          <c-col>
+            <router-link to="demo/row">
+              <c-icon>flame</c-icon> Row</router-link>
+          </c-col>
+        </c-row>
+        <c-row :link="true">
+          <c-col>
+            <router-link to="demo/scroller">
+              <c-icon>flame</c-icon> Scroller</router-link>
           </c-col>
         </c-row>
         <c-row :link="true">
@@ -101,8 +89,20 @@
         </c-row>
         <c-row :link="true">
           <c-col>
+            <router-link to="demo/spinner">
+              <c-icon>flame</c-icon> Spinner</router-link>
+          </c-col>
+        </c-row>
+        <c-row :link="true">
+          <c-col>
             <router-link to="demo/swiper">
               <c-icon>flame</c-icon> Swiper</router-link>
+          </c-col>
+        </c-row>
+        <c-row :link="true">
+          <c-col>
+            <router-link to="demo/toast">
+              <c-icon>flame</c-icon> Toast</router-link>
           </c-col>
         </c-row>
       </div>

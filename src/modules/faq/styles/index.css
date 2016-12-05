@@ -1,5 +1,7 @@
 .index {
-  & .c-button {
-    height: 100%;
+  & .c-swiper {
+    & .c-button {
+      height: 100%;
+    }
   }
 }

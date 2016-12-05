@@ -60,4 +60,4 @@ export default {
 }
 </script>
 
-<style src="../styles/index"></style>
+<style src="../styles/index" scoped></style>

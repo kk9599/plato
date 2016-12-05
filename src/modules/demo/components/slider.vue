@@ -6,6 +6,10 @@
         :transition="transition">
         <div class="d-slider-item">Single Slide</div>
       </c-slider>
+<pre class="source"><code>&lt;c-slider
+  :transition="transition"&gt;
+  &lt;div class="d-slider-item"&gt;Single Slide&lt;/div&gt;
+&lt;/c-slider&gt;</code></pre>
       <hr>
       <p>Two slides</p>
       <c-slider
@@ -82,4 +86,39 @@ export default {
 }
 </script>
 
-<style src="../styles/index"></style>
+<style scoped>
+.c-slider {
+  height: dpr(200px);
+}
+
+.d-slider-item {
+  text-align: center;
+  line-height: dpr(160px);
+  color: white;
+  font-size: dpr(60px);
+
+  &:only-child {
+    line-height: dpr(200px);
+  }
+
+  &:nth-child(5n+1) {
+    background: var(--primary);
+  }
+
+  &:nth-child(5n+2) {
+    background: color(var(--primary) hue(+20));
+  }
+
+  &:nth-child(5n+3) {
+    background: color(var(--primary) hue(+40));
+  }
+
+  &:nth-child(5n+4) {
+    background: color(var(--primary) hue(+60));
+  }
+
+  &:nth-child(5n) {
+    background: color(var(--primary) hue(+80));
+  }
+}
+</style>

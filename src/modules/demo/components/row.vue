@@ -1,10 +1,13 @@
 <template>
-  <div class="d-row">
+  <div class="main">
     <div>
       <c-row>
         <p>no cols</p>
       </c-row>
     </div>
+<pre class="source"><code>&lt;c-row&gt;
+  &lt;p&gt;no cols&lt;/p&gt;
+&lt;/c-row&gt;</code></pre>
     <div>
       <c-row>
         <c-col>col</c-col>
@@ -19,6 +22,18 @@
         <c-col :size="1">col-1</c-col>
       </c-row>
     </div>
+<pre class="source"><code>&lt;c-row&gt;
+  &lt;c-col&gt;col&lt;/c-col&gt;
+  &lt;c-col&gt;col&lt;/c-col&gt;
+&lt;/c-row&gt;
+&lt;c-row&gt;
+  &lt;c-col :size="1"&gt;col-1&lt;/c-col&gt;
+  &lt;c-col :size="3"&gt;col-3&lt;/c-col&gt;
+&lt;/c-row&gt;
+&lt;c-row&gt;
+  &lt;c-col :size="3"&gt;col-3&lt;/c-col&gt;
+  &lt;c-col :size="1"&gt;col-1&lt;/c-col&gt;
+&lt;/c-row&gt;</code></pre>
     <div>
       <c-row>
         <c-col>col</c-col>
@@ -52,4 +67,15 @@ export default {
 }
 </script>
 
-<style src="../styles/index"></style>
+<style scoped>
+.main {
+  & > div {
+    margin: 1rem 0 0;
+  }
+
+  & .c-col {
+    box-sizing: border-box;
+    border: 1px solid var(--primary);
+  }
+}
+</style>
